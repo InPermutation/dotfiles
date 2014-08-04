@@ -1,0 +1,26 @@
+[ui]
+editor = vim
+
+[extensions]
+hgext.largefiles=
+hgext.churn=
+hgext.extdiff=
+rebase=
+hgext.purge=
+pager=
+
+[alias]
+pul = pull
+
+[pager]
+pager = less -FRX
+
+[defaults]
+log = -G
+out = -G
+
+[mq]
+# use the 'secret' phase for mq changesets
+secret = True
+
+
