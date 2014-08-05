@@ -16,7 +16,7 @@ pul = pull
 pager = less -FRX
 
 [defaults]
-log = -G
+log = -G --style compact
 out = -G
 
 [mq]
