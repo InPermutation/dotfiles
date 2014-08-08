@@ -3,7 +3,9 @@ Getting started
 
 Clone this repository to your home directory.
 
-.hgrc and .vimrc will be automatically included, on Windows and Unixes.
+Run `git submodule update --init`  after checking it out to get the submodules.
+
+`.hgrc` and `.vimrc` will be automatically included, on Windows and Unixes.
 
 Add the following line to the top of your PowerShell profile (`vim $PROFILE`):
 
@@ -11,4 +13,4 @@ Add the following line to the top of your PowerShell profile (`vim $PROFILE`):
 
 Add things you don't want committed (secrets, etc.) to your actual `$PROFILE`.
 
-.gitignore contains simply `*` because I don't want to accidentally add files from my home directory.
+`.gitignore` contains simply `*` because I don't want to accidentally add files from my home directory.
