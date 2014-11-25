@@ -26,3 +26,9 @@ set nowritebackup
 
 set list
 set listchars=tab:>-,trail:.,extends:#,nbsp:.
+
+set ignorecase
+set smartcase
+
+au BufRead,BufNewFile *.was set filetype=vb
+au BufRead,BufNewFile *.was set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
