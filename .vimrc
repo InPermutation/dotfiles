@@ -17,7 +17,7 @@ set shiftwidth=4 softtabstop=4 tabstop=8 expandtab
 
 set backspace=indent,eol,start
 
-au filetype py setl ff=unix 
+au filetype py setl ff=unix
 
 filetype plugin indent on
 
