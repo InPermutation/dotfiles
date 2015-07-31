@@ -10,6 +10,6 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "/Users/jacob/.vim/bundle/rust.vim"]
-	path = /Users/jacob/.vim/bundle/rust.vim
+[submodule ".vim/bundle/rust.vim"]
+	path = .vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
