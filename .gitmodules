@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/rust.vim"]
 	path = .vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule ".vim/bundle/vim-ps1"]
+	path = .vim/bundle/vim-ps1
+	url = https://github.com/PProvost/vim-ps1.git
