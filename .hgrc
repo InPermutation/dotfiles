@@ -1,5 +1,6 @@
 [ui]
 editor = vim
+ignore = ~/.hgignore
 
 [extensions]
 hgext.largefiles=
