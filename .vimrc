@@ -14,6 +14,7 @@ syntax on
 
 set autoindent smartindent
 set shiftwidth=4 softtabstop=4 tabstop=8 expandtab
+set hlsearch
 
 set backspace=indent,eol,start
 
