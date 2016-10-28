@@ -40,6 +40,7 @@ function VcsStatus {
 }
 
 function prompt {
+    $realLASTEXITCODE = $global:LASTEXITCODE
     # our theme
     $cdelim = [ConsoleColor]::DarkCyan
     $chost = [ConsoleColor]::Green
@@ -50,6 +51,8 @@ function prompt {
     write-host " $(shorten-path (pwd).Path)" -n -f $cloc
     write-host "$(VcsStatus)" -n -f $cvcs
     write-host ' PS>' -n -f $cdelim
+
+    $global:LASTEXITCODE = $realLASTEXITCODE
     return ' '
 }
 function which($name) {
