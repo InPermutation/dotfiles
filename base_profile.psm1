@@ -10,7 +10,7 @@ function code([string]$dir) { cd "C:\code\$dir" }
 function kiln([string]$dir) { code "kiln\$dir" }
 function shorten-path([string] $path) {
    $loc = $path.Replace($HOME, '~')
-   $loc = $loc.Replace("C:\code\kiln", "kiln")
+   $loc = $loc.Replace('C:\code\kiln', 'kiln')
    $loc = $loc.Replace('C:\code', 'code')
    # remove prefix for UNC paths
    $loc = $loc -replace '^[^:]+::', ''
@@ -19,20 +19,20 @@ function shorten-path([string] $path) {
 
 function VcsStatus {
     $branch = git branch 2>$null |
-        ?{ $_ -match "^\*" } |
-        %{ $_.Replace("* ", "") }
+        ?{ $_ -match '^\*' } |
+        %{ $_.Replace('* ', '') }
 
     if ($branch) {
         return " git $branch"
     }
     $tag = hg par 2>$null |
-        ?{ $_ -match "^tag:\s*" } |
+        ?{ $_ -match '^tag:\s*' } |
         %{ $_ -replace '^tag:\s*(.*)','$1' }
     if($tag) {
         return " hg $tag"
     }
     $changeset = hg par 2>$null |
-        ?{ $_ -match "^changeset:" } |
+        ?{ $_ -match '^changeset:' } |
         %{ $_ -replace '^changeset:\s*(.*)','$1' }
     if($changeset) {
         return " hg $changeset"
@@ -49,7 +49,7 @@ function prompt {
 
     write-host "$env:username@$([net.dns]::GetHostName())" -n -f $chost
     write-host " $(shorten-path (pwd).Path)" -n -f $cloc
-    write-host "$(VcsStatus)" -n -f $cvcs
+    write-host (VcsStatus) -n -f $cvcs
     write-host ' PS>' -n -f $cdelim
 
     $global:LASTEXITCODE = $realLASTEXITCODE
