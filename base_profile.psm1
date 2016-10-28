@@ -1,5 +1,8 @@
-function vs([int]$Year=2013, [string]$Dir) {
+function vs([int]$Year=2015, [string]$Dir) {
     cd "~\Documents\Visual Studio $Year\Projects\$Dir"
+}
+function vs2015([string]$Dir) {
+    vs 2015 $Dir
 }
 function vs2013([string]$Dir) {
     vs 2013 $Dir
