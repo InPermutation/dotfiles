@@ -1,15 +1,15 @@
-function vs([int]$year=2013, [string]$dir) {
-    cd "~\Documents\Visual Studio $year\Projects\$dir"
+function vs([int]$Year=2013, [string]$Dir) {
+    cd "~\Documents\Visual Studio $Year\Projects\$Dir"
 }
-function vs2013([string]$dir) {
-    vs 2013 $dir
+function vs2013([string]$Dir) {
+    vs 2013 $Dir
 }
 
 # TODO: refactor this into something reusable
-function code([string]$dir) { cd "C:\code\$dir" }
-function kiln([string]$dir) { code "kiln\$dir" }
-function shorten-path([string] $path) {
-   $loc = $path.Replace($HOME, '~')
+function code([string]$Dir) { cd "C:\code\$Dir" }
+function kiln([string]$Dir) { code "kiln\$Dir" }
+function shorten-path([string] $Path) {
+   $loc = $Path.Replace($HOME, '~')
    $loc = $loc.Replace('C:\code\kiln', 'kiln')
    $loc = $loc.Replace('C:\code', 'code')
    # remove prefix for UNC paths
@@ -55,8 +55,8 @@ function prompt {
     $global:LASTEXITCODE = $realLASTEXITCODE
     return ' '
 }
-function which($name) {
-    Get-Command $name | Select-Object -ExpandProperty Definition
+function which($Name) {
+    Get-Command $Name | Select-Object -ExpandProperty Definition
 }
 
 function elevate($b='powershell') {
