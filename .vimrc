@@ -40,10 +40,18 @@ set smartcase
 au BufRead,BufNewFile *.was set filetype=vb
 au BufRead,BufNewFile *.was set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
-if executable('ag')
-    " The Silver Searcher
-    " use ag over grep
-    set grepprg=ag\ --nogroup\ --nocolor
+if executable('rg')
+    " RipGrep preferred
+    " per https://vi.stackexchange.com/a/7235
+    set grepprg=rg\ -S\ --vimgrep
+    set grepformat^=%f:%l:%c:%m
+elseif executable('ag')
+    " The Silver Searcher also preferred
+    " https://blog.kiprosh.com/integrating-the-silver-searcher-with-vims-grepprg/
+    set grepprg=ag\ --nogroup\ --nocolor\ --vimgrep\ $*
+    set grepformat^=%f:%l:%c:%m
+else
+    " at least search recursively by default >:T
+    set grepprg=grep\ -nr\ \$\*\ \.
 endif
-
 
