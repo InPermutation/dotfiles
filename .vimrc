@@ -28,8 +28,11 @@ au filetype py setl ff=unix
 
 filetype plugin indent on
 
+set noswapfile
 set nobackup
 set nowritebackup
+
+set cursorline
 
 set list
 set listchars=tab:>-,trail:.,extends:#,nbsp:.
