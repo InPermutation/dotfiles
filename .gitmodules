@@ -29,3 +29,15 @@
 	path = .vim/pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go
 	branch = master
+[submodule ".vim/pack/plugins/start/vim-airline"]
+	path = .vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+	branch = master
+[submodule ".vim/pack/plugins/start/vim-fugitive"]
+	path = .vim/pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+	branch = master
+[submodule ".vim/pack/plugins/start/vim-signify"]
+	path = .vim/pack/plugins/start/vim-signify
+	url = https://github.com/mhinz/vim-signify
+	branch = master
