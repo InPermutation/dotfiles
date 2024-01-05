@@ -1,30 +1,27 @@
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
+	path = .vim/pack/plugins/start/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/puppet"]
-	path = .vim/bundle/puppet
+	path = .vim/pack/plugins/start/puppet
 	url = https://github.com/rodjek/vim-puppet.git
 [submodule ".vim/bundle/tabular"]
-	path = .vim/bundle/tabular
+	path = .vim/pack/plugins/start/tabular
 	url = https://github.com/godlygeek/tabular.git
 [submodule ".vim/bundle/rust.vim"]
-	path = .vim/bundle/rust.vim
+	path = .vim/pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule ".vim/bundle/vim-ps1"]
-	path = .vim/bundle/vim-ps1
+	path = .vim/pack/plugins/start/vim-ps1
 	url = https://github.com/PProvost/vim-ps1.git
 [submodule ".vim/bundle/vim-toml"]
-	path = .vim/bundle/vim-toml
+	path = .vim/pack/plugins/start/vim-toml
 	url = https://github.com/cespare/vim-toml
 [submodule ".vim/bundle/vim-markdown"]
-	path = .vim/bundle/vim-markdown
+	path = .vim/pack/plugins/start/vim-markdown
 	url = https://github.com/tpope/vim-markdown
 [submodule ".vim/bundle/vim-elixir"]
-	path = .vim/bundle/vim-elixir
+	path = .vim/pack/plugins/start/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
 [submodule ".vim/bundle/vim-ruby"]
-	path = .vim/bundle/vim-ruby
+	path = .vim/pack/plugins/start/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
