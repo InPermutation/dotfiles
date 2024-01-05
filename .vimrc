@@ -42,4 +42,4 @@ else
     set grepprg=grep\ -nr\ \$\*\ \.
 endif
 let g:airline#extensions#tabline#enabled = 1
-
+helptags ALL
