@@ -3,12 +3,6 @@ if has('win32') || has('win64')
     set runtimepath^=~/.vim
 endif
 
-if has('gui_running')
-    colorscheme desert
-else
-    colorscheme industry
-endif
-
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 call pathogen#infect()
