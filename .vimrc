@@ -41,4 +41,5 @@ else
     " at least search recursively by default >:T
     set grepprg=grep\ -nr\ \$\*\ \.
 endif
+let g:airline#extensions#tabline#enabled = 1
 
