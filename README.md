@@ -4,7 +4,7 @@ Clone this repository wherever you'd like. I picked `~/dotfiles`.
 
 Run `git submodule update --init`  after checking it out to get the submodules.
 
-Symlink `.vim` and `.vimrc` to the ones in here.
+Symlink `.vim`, `.vimrc`, `.zshrc` to the ones in here.
 
 Updating
 ========
