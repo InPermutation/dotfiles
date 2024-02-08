@@ -8,8 +8,8 @@ Symlink `.vim`, `.vimrc`, `.zshrc` to the ones in here.
 
 Updating
 ========
-Per [How to update submodules in GIT](https://stackoverflow.com/a/33714623), 
+Per [Git book 7.11: Git Tools - Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules),
 
 ```
-git submodule foreach git pull
+git submodule update --remote
 ```
