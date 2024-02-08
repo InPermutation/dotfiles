@@ -27,6 +27,9 @@ set smartcase
 au BufRead,BufNewFile *.was set filetype=vb
 au BufRead,BufNewFile *.was set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
+au BufReadPost,BufNewFile *.yaml,*.yml set filetype=yaml foldmethod=indent
+au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 if executable('rg')
     " RipGrep preferred
     " per https://vi.stackexchange.com/a/7235
