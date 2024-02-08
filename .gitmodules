@@ -37,3 +37,6 @@
 [submodule ".vim/pack/plugins/start/vim-signify"]
 	path = .vim/pack/plugins/start/vim-signify
 	url = https://github.com/mhinz/vim-signify
+[submodule ".vim/pack/plugins/start/vim-indentwise"]
+	path = .vim/pack/plugins/start/vim-indentwise
+	url = https://github.com/jeetsukumaran/vim-indentwise
