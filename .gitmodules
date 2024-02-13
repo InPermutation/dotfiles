@@ -40,3 +40,7 @@
 [submodule ".vim/pack/plugins/start/vim-indentwise"]
 	path = .vim/pack/plugins/start/vim-indentwise
 	url = https://github.com/jeetsukumaran/vim-indentwise
+[submodule ".vim/pack/plugins/start/vim-json"]
+	path = .vim/pack/plugins/start/vim-json
+	url = https://github.com/elzr/vim-json
+	branch = master
