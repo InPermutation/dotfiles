@@ -46,5 +46,10 @@ else
     " at least search recursively by default >:T
     set grepprg=grep\ -nr\ \$\*\ \.
 endif
+augroup autoquickfix
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost    l* lwindow
+augroup END
 let g:airline#extensions#tabline#enabled = 1
 helptags ALL
