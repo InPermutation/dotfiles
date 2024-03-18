@@ -48,3 +48,6 @@
 	path = .vim/pack/plugins/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
 	branch = master
+[submodule ".vim/pack/plugins/start/vim-rhubarb"]
+	path = .vim/pack/plugins/start/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
