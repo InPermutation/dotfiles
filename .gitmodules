@@ -51,3 +51,6 @@
 [submodule ".vim/pack/plugins/start/vim-rhubarb"]
 	path = .vim/pack/plugins/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule ".vim/pack/plugins/start/vim-cue"]
+	path = .vim/pack/plugins/start/vim-cue
+	url = https://github.com/jjo/vim-cue
