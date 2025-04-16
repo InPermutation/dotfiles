@@ -57,3 +57,6 @@
 [submodule ".vim/pack/plugins/start/surround"]
 	path = .vim/pack/plugins/start/surround
 	url = https://tpope.io/vim/surround.git
+[submodule ".vim/pack/plugins/start/copilot.vim"]
+	path = .vim/pack/plugins/start/copilot.vim
+	url = https://github.com/github/copilot.vim
