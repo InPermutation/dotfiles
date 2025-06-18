@@ -53,3 +53,4 @@ augroup autoquickfix
 augroup END
 let g:airline#extensions#tabline#enabled = 1
 helptags ALL
+let g:vim_json_syntax_conceal = 0

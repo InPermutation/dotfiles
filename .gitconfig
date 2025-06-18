@@ -1,0 +1,8 @@
+[push]
+	autoSetupRemote = true
+[core]
+	editor = vim
+[fetch]
+	prune = true
+[alias]
+	cb = "!cb() { branch=${1:-$(git rev-parse --abbrev-ref HEAD)}; git checkout master && git branch -D \"$branch\"; }; cb"
