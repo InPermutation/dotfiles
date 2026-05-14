@@ -2,6 +2,7 @@
 	autoSetupRemote = true
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [fetch]
 	prune = true
 [alias]
