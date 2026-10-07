@@ -7,3 +7,5 @@ then
 fi
 
 setopt interactive_comments
+setopt no_nomatch
+setopt no_bang_hist
