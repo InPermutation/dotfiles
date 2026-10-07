@@ -5,3 +5,5 @@ then
     autoload -Uz compinit
     compinit
 fi
+
+setopt interactive_comments
